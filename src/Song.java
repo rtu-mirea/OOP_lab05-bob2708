@@ -30,6 +30,14 @@ public class Song {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setVoices(int voices) {
+        this.voices = voices;
+    }
+
     public boolean voice (User user) {
         for (User users :voiced) {
             if (user.getLogin().equals(users.getLogin())) {
